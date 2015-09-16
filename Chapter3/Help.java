@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Help {
 	public static void main(String args[]) throws IOException{
-		char choice;
+		char choice, ignore;
 		do{
 			System.out.print("Help on:\n"
 					+ "\t1. if\n"
@@ -47,12 +47,20 @@ public class Help {
 					+ "\tstatement;\n"
 					+ "}while(condition);");
 			break;
+		case '6':
+			System.out.println("The break:\n"
+					+ "break; or break label;");
+			break;
+		case '7':
+			System.out.println("The continue:\n"
+					+ "continue; or continue label;");
+			break;
 		default:
 			System.out.println("Selection not found.");
+			break;
 		}
 		
 		// code from the book
-		char ignore;
 		do{
 			System.out.print("Help on:\n");
 			System.out.print("\t1. if\n");
@@ -101,8 +109,17 @@ public class Help {
 			System.out.print("\tstatement;");
 			System.out.println("}while(condition);");
 			break;
+		case '6':
+			System.out.println("The break:");
+			System.out.println("break; or break label;");
+			break;
+		case '7':
+			System.out.println("The continue:");
+			System.out.println("continue; or continue label;");
+			break;
 		default:
 			System.out.println("Selection not found.");
+			break;
 		}
 	}
 }
